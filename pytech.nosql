@@ -1,0 +1,25 @@
+{
+    "student":[
+        {
+            "student_id": "012345"
+            "first_name": "Chris"
+            "last_name": "Clausen"
+        }
+    ],
+    "enrollment":[
+        {
+            "term": "2"
+            "gpa": "3.86"
+            "start_date": "September 3"
+            "end_date": "January 7"
+        }
+    ],
+    "course":[
+        {
+            "course_id": "CSD_320"
+            "description": "Java Programming"
+            "instructor" : "Josh Adams"
+            "grade": "A"
+        }
+    ]
+}
