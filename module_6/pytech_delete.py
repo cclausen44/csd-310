@@ -1,7 +1,8 @@
 # Christopher Clausen
 # 6/21/2022
 # Module 6.3 Assignment
-# 
+# This program inserts a new document into a collection,
+#  then deletes that updated document.
 
 # import MongoClient
 from pymongo import MongoClient
