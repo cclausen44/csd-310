@@ -1,7 +1,7 @@
 # Christopher Clausen
 # 6/21/2022
 # Module 6.2 Assignment
-# 
+# This program updates a document, changing the last name of one.
 
 # import MongoClient
 from pymongo import MongoClient
