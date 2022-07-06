@@ -1,6 +1,7 @@
 # Christopher Clausen
 # 6/29/2022
 # 8.3 Assignment
+# Link to github: https://github.com/cclausen44/csd-310.git
 
 from webbrowser import MacOSXOSAScript
 import mysql.connector
