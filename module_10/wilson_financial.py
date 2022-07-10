@@ -26,7 +26,7 @@ cursor.execute("INSERT INTO Employees(emp_id, emp_fname, emp_lname, emp_pos) VAL
 cursor.execute("INSERT INTO Employees(emp_id, emp_fname, emp_lname, emp_pos) VALUES('002', 'June', 'Santos', 'Compliance Manager')")
 
 # create client table
-cursor.execute("CREATE TABLE Client (cl_id INTEGER NOT NULL, cl_name CHAR(30) NOT NULL, cl_address CHAR(50) NOT NULL, cl_phone CHAR(10) NOT NULL, cl_email CHAR(50) NOT NULL)")
+#cursor.execute("CREATE TABLE Client (cl_id INTEGER NOT NULL, cl_name CHAR(30) NOT NULL, cl_address CHAR(50) NOT NULL, cl_phone CHAR(10) NOT NULL, cl_email CHAR(50) NOT NULL)")
 # insert values into client table
 """
 cursor.execute("INSERT INTO Client (cl_id, cl_name, cl_address, cl_phone, cl_email) VALUES ")
@@ -39,7 +39,7 @@ cursor.execute("INSERT INTO Client (cl_id, cl_name, cl_address, cl_phone, cl_ema
 cursor.execute("INSERT INTO Client (cl_id, cl_name, cl_address, cl_phone, cl_email) VALUES ")
 """
 # create transactions table
-cursor.execute("CREATE TABLE Transactions (cl_id INTEGER NOT NULL, order_id INTEGER NOT NULL, order_date VARCHAR(10) NOT NULL, order_price INTEGER NOT NULL)")
+#cursor.execute("CREATE TABLE Transactions (cl_id INTEGER NOT NULL, order_id INTEGER NOT NULL, order_date VARCHAR(10) NOT NULL, order_price INTEGER NOT NULL)")
 # insert values into transactions table
 """
 cursor.execute("INSERT INTO Transactions (order_id, order_date, order_price) VALUES ")
@@ -60,7 +60,25 @@ cursor.execute("SELECT emp_id, emp_fname, emp_lname, emp_pos FROM Employees")
 print("--DISPLAYING EMPLOYEE RECORDS--")
 Employees = cursor.fetchall()
 for employee in Employees:
-    print("emp_id: {}".format(employee[0]),
+    print("Employee ID: {}".format(employee[0]),
         "\nFirst Name: {}".format(employee[1]),
         "\nLast Name: {}".format(employee[2]),
         "\nPosition: {}\n".format(employee[3]))
+"""
+# display client records
+cursor.execute()
+print("-DISPLAYING CLIENT RECORDS--")
+Client = cursor.fetchall()
+for clients in Client:
+    print("Client ID: {}".format(clients[0]),
+        "\nName: {}".format(clients[1]),
+        "\nAddress: {}".format(clients[2]),
+        "\nPhone: {}\n".format(clients[3]),
+        "\nEmail: {}\n".format(clients[4]))
+
+# display transaction records
+cursor.execute()
+print("--DISPLAYING TRANSACTION RECORDS--")
+for transaction in Transactions:
+    print("")
+"""
