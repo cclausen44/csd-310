@@ -41,7 +41,7 @@ cursor.execute("""SELECT COUNT(cl_id) AS Num_of_Clients,
                 """)
 transactions = cursor.fetchall()
 
-print("-- DISPLAYING AVERAGE of ASSETS --")
+print("-- AVERAGE ASSETS OF ENTIRE CLIENT LIST --")
 for transaction in transactions:
     print("Number of Clients: {}".format(transaction[0]))
     print("Sum of Client Transactions: ${}".format(transaction[1]))
